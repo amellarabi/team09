@@ -3,14 +3,17 @@ document.addEventListener("DOMContentLoaded", function(){
 
     const menuButton= document.querySelector(".menu-button");
     const menuLinks= document.querySelector(".menu-links");
+    let loogo = document.getElementById("logo");
 
     menuButton.addEventListener("click",function(){
         menuLinks.classList.toggle("active");
+        loogo.classList.toggle("disappear");
     })
 
     document.addEventListener("click", function (event) {
         if (!menuButton.contains(event.target) && !menuLinks.contains(event.target)){
             menuLinks.classList.remove("active");
+            loogo.classList.remove("disappear");
         }
     });
 
@@ -21,8 +24,14 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+let contaact = document.getElementById("Contact");
+contaact.addEventListener("click", () => {
+    window.scrollTo({ bottom: 0, behavior: "smooth" });
+})
+
 const inputs = document.querySelectorAll(".input");
 let topbutton = document.getElementById("top");
+let navv = document.getElementById("navv");
 topbutton.style.display = "none";
 
 document.addEventListener("scroll", () => {
@@ -31,7 +40,16 @@ document.addEventListener("scroll", () => {
     }else{
         topbutton.style.display = "none";
     }
+    if(window.scrollY > 620){
+        navv.classList.add("shadowbox");
+    }else{
+        navv.classList.remove("shadowbox");
+    }
 })
+
+function Contact(){
+    window.scrollTo({ bottom: 0, behavior: "smooth" });
+}
 
 
 // our latest news section

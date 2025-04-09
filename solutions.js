@@ -2,12 +2,17 @@
 document.addEventListener("DOMContentLoaded", function(){
     const menuButton= document.querySelector(".menu-button");
     const menuLinks= document.querySelector(".menu-links");
+    let loogo = document.getElementById("logo");
+
     menuButton.addEventListener("click",function(){
         menuLinks.classList.toggle("active");
+        loogo.classList.toggle("disappear");
     })
+
     document.addEventListener("click", function (event) {
         if (!menuButton.contains(event.target) && !menuLinks.contains(event.target)){
             menuLinks.classList.remove("active");
+            loogo.classList.remove("disappear");
         }
     });
 })

@@ -13,6 +13,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 /* color identification section */
 :root{
     --base-color: rgb(53, 0, 0);
@@ -106,6 +107,9 @@ nav{
 nav .logo-img{
     width: 245px;
     height: 147px;
+}
+nav #logo.disappear{
+    opacity: 0;
 }
 nav .links{
     display: flex;
