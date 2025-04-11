@@ -202,6 +202,15 @@ section .red-img{
     width: 817px;
     border-radius: 9999px;
     transform: translateY(50px);
+    animation: imgAnimation1 1.5s forwards, imgAnimation2 1.5s forwards 2s;
+    position: absolute;
+    bottom: -100%;
+    left: 30%;
+}
+section .head{
+    left: -100%;
+    position: relative;
+    animation: textAnimation 1s forwards 2s;
 }
 section .head1{
     display: flex;
@@ -261,7 +270,7 @@ section .expertise{
   /* our expertise section */
 .part2{
     background-color: var(--primary-color);
-    padding: 20px;
+    padding: 0 20px;
     font-weight: bold;
     transform: translateY(-20px);
 }
@@ -282,11 +291,12 @@ section .expertise{
     margin: 10px;
 }
 .part2 .parent .parent1 svg{
-    fill: rgb(53, 0, 0);
+    fill: rgb(127, 15, 15);
     width: 60px;
     height: 60px;
 }
 .part2 .parent .parent1 p{
+    color: rgb(127, 15, 15);
     font-size: 24px;
     margin: 20px 10px;
 }
@@ -321,7 +331,6 @@ section .expertise{
     padding: 0 25px;
     justify-content: center;
     min-height: 80vh;
-    /* z-index: -1; */
 }
 .grandparent .slider-wrapper{
     overflow: hidden;
@@ -333,6 +342,8 @@ section .expertise{
     color: white;
     user-select: none;
     padding: 30px;
+    /* margin-top: 20px;
+    margin-bottom: 40px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,6 +352,10 @@ section .expertise{
     backdrop-filter: blur(30px);
     background: linear-gradient(135deg, #4d0000, #240000);
     border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease;
+}
+.grandparent .card-list .card-item:hover{
+    transform: scale(1.05);
 }
 .grandparent .card-list .card-item .news-image{
     width: 90%;
@@ -380,13 +395,14 @@ section .expertise{
     transition: 0.2s ease;
 }
 .grandparent .slider-wrapper .swiper-slide-button:hover{
-    color: var(--base-color);
+    animation: 0.2s ease-out;
 }
 
   /* contact section */
 main{
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
     align-items: center;
     background: #d3d3d3;
     padding: 20px;
@@ -528,6 +544,37 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* scroll animation */
+.block{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/* header section animation */
+@keyframes imgAnimation1 {
+    from{bottom: -100%;}
+    to{bottom:20%}
+}
+@keyframes imgAnimation2 {
+    from{left: 30%;}
+    to{ left: 43%;}
+}
+@keyframes textAnimation{
+    from{ left: -100%;}
+    to {left: 0%;}
+}
+
   /* teblet screen section */
 @media screen and (max-width: 908px ){
     nav .links{
@@ -577,5 +624,18 @@ footer a:hover {
     }
     section .red-img{
         display: none;
+    }
+}
+@media screen and (max-width: 767px){
+    .part2 .parent{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main{
+        flex-direction: column;
+    }
+    nav .menu-links{
+        width: 100dvw;
+        right: -100dvw;
+
     }
 }

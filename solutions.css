@@ -99,6 +99,7 @@ nav{
     justify-content: space-between;
     width: 100%;
     top: 0px;
+    z-index: 100;
     left: 0px;
     height: 140px;
     position: fixed;
@@ -186,66 +187,65 @@ nav .contact-us:hover{
 
   /* solution section */
 section{
-    padding-top: 20px;
-    margin-top: 60px;
-    padding-bottom: 20px;
-    width: 100%;
-    background-color: var(--primary-color);
+    margin-top: 90px;
 }
-section .solution{
-    display: flex;
-    margin: 50px auto;
-    gap: 25px;
-    margin-top: 30px;
-    max-width: 1200px;
-}
-section .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: calc(100% /3);
-}
-section .container img{
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-section .container .IBI{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    margin: 5px;
-}
-section .container .IBI i{
+section .card-container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+section .card{
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+section .card:hover{
+    transform: scale(1.05);
+}
+section .card img{
+    width: 100%; 
+    height: 50%;
+    object-fit: cover;
+}
+section .card .card-content{
+    padding: 16px;
+}
+section .card .card-content .card-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    width: 50px;
-    border-radius: 50%;
-    height: 50px;
-    background-color: var(--text-variant);
-    color: white;
+    gap: 10px;
+    color: var(--text-variant);
+    margin-bottom: 8px;
+}
+section .card .card-content .card-title i{
     font-size: 24px;
 }
-section .container .IBI h3{
-    font-size: 26px;
+section .card .card-content .card-title h3{
+    font-size: 28px;
 }
-section .container p{
-    padding: 5px;
-    font-size: 19px;
+section .card .card-content p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
 }
-section .container button{
-    padding: 10px 20px;
-    width: 50%;
-    border-radius: 8px;
-    border: transparent;
-    color: white;
-    font-size: 16px;
-    margin-top: 20px;
+section .card .card-content .btn{
+    display: inline-block; 
+    padding: 8px 25px;
     background-color: var(--text-variant);
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 16px;
+    color: #fff;
+}
+section .card .card-content .btn:hover{
+    background-color: rgb(53, 0, 0);
 }
 
    /* footer section  */
