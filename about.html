@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/6c390dfd8c.js" crossorigin="anonymous"></script>
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- scroll button section -->
+    <div class="top" id="top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- navigation bar section -->
+    <nav>
+        <a href="index.html" style="text-decoration: none;"><img src="logo-ibitek-2023.png" alt="" id="logo" class="logo-img"></a>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="#" onclick="scrollNews()">Our Sites</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <button id="theme-switch">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+            </button>
+        </ul>
+        <button class="contact-us"> Contact Us</button>
+        <div class="menu-button">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="menu-links">
+            <a href="index.html" style="text-decoration: none;"><img src="logo-ibitek-2023.png" alt="" class="logo-img"></a>
+            <li><a href="index.html" style="background-color: #d3d3d3; padding: 5px 140px ; border-radius: 8px;">Home</a></li>
+            <li><a href="solutions.html" style="background-color: #d3d3d3; padding: 5px 130px ; border-radius: 8px;">Solutions</a></li>
+            <li><a href="" style="background-color: #d3d3d3; padding: 5px 130px ; border-radius: 8px;">Our Sites</a></li>
+            <li><a href="about.html" style="background-color: #d3d3d3; padding: 5px 130px ; border-radius: 8px;">About Us</a></li>
+            <div>
+                <button id="theme-switch">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                </button>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- our latest news section -->
+    <div >
+        <div class="box1">
+            <p style="font-weight: bold; margin-top: 90px; font-size: xx-large; text-align: center;">OUR LATEST NEWS</p>
+            <div class="timeline">
+                <div class="item">
+                    <div class="year">2024</div>
+                    <div class="containers">
+                        <i class="fa-solid fa-circle"></i>
+                        <div class="text-box">
+                            <h3>🚛 Truck queen management</h3>
+                            <p>The management of truck queues at industrial sites is an essential component of modern logistics. With increasing transport volumes and growing demands for speed and efficiency, it is becoming imperative ...</p>
+                            <div>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                        <img src="14.jpeg" alt="">
+                    </div>
+                </div>
+        
+                <div class="item">
+                    <div class="year">2023</div>
+                    <div class="containers">
+                        <i class="fa-solid fa-circle"></i>
+                        <div class="text-box">
+                            <h3>📹 What is the role of IP camera in the logistics of a factory?</h3>
+                            <p>The era of Industry 4.0 is well underway, and it has left no aspect of production unchanged. The role of IP cameras, these devices equipped with a unique port ...</p>
+                            <div>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                        <img src="3.jpeg" alt="">
+                    </div>
+                </div>
+        
+                <div class="item">
+                    <div class="year">2022</div>
+                    <div class="containers">
+                        <i class="fa-solid fa-circle"></i>
+                        <div class="text-box">
+                            <h3>⚙️ Process 4.0: Real-Time manufacturing data drives optimization 4.0</h3>
+                            <p>The digital revolution as well as the emergence of new technologies are now affecting the organization of work, manufacturing processes and production systems in factories. We talk about Industry 4.0 ...</p>
+                            <div>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                        <img src="28.jpeg" alt="">
+                    </div>
+                </div>
+        
+                <div class="item">
+                    <div class="year">2021</div>
+                    <div class="containers">
+                        <i class="fa-solid fa-circle"></i>
+                        <div class="text-box">
+                            <h3>🏭 For a more profitable plant: How to improve the loading process?</h3>
+                            <p>In the world of industry, the question of profitability is an essential subject. Actually, the margin that an industrial production site can generate is one of the main indicators ...</p>
+                            <div>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                        <img src="1.jpeg" alt="">
+                    </div>
+                </div>
+        
+                <div class="item">
+                    <div class="year">2019</div>
+                    <div class="containers">
+                        <i class="fa-solid fa-circle"></i>
+                        <div class="text-box">
+                            <h3>🌍 An Industrial Revolution?</h3>
+                            <p>IBITEK first began to examine the relevance of researching a new and innovative control‐command solution with the questions : What is a 4.0 control-command solution? What does it do? And ...</p>
+                            <div>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                        <img src="4.jpg" alt="">
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="box2">
+            <p style="font-weight: bold; font-size: xx-large; text-align: center;">OUR LATEST NEWS</p>
+            <div class="content">
+                <div>
+                    <img src="14.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <div class="years">2024</div>
+                    <h3>🚛 Truck queen management</h3>
+                    <p>The management of truck queues at industrial sites is an essential component of modern logistics. With increasing transport volumes and growing demands for speed and efficiency, it is becoming imperative ...</p>
+                    <div style="text-align: start; padding-left: 10px;">
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div>
+                    <img src="3.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <div class="years">2023</div>
+                    <h3>📹 What is the role of IP camera in the logistics of a factory?</h3>
+                    <p>The era of Industry 4.0 is well underway, and it has left no aspect of production unchanged. The role of IP cameras, these devices equipped with a unique port ...</p>
+                    <div style="text-align: start; padding-left: 10px;">
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div>
+                    <img src="28.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <div class="years">2022</div>
+                    <h3>⚙️ Process 4.0: Real-Time manufacturing data drives optimization 4.0</h3>
+                    <p>The digital revolution as well as the emergence of new technologies are now affecting the organization of work, manufacturing processes and production systems in factories. We talk about Industry 4.0 ...</p>
+                    <div style="text-align: start; padding-left: 10px;">
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div>
+                    <img src="1.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <div class="years">2021</div>
+                    <h3>🏭 For a more profitable plant: How to improve the loading process?</h3>
+                    <p>In the world of industry, the question of profitability is an essential subject. Actually, the margin that an industrial production site can generate is one of the main indicators ...</p>
+                    <div style="text-align: start; padding-left: 10px;">
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div>
+                    <img src="4.jpg" alt="">
+                </div>
+                <div class="text">
+                    <div class="years">2019</div>
+                    <h3>🌍 An Industrial Revolution?</h3>
+                    <p>IBITEK first began to examine the relevance of researching a new and innovative control‐command solution with the questions : What is a 4.0 control-command solution? What does it do? And ...</p>
+                    <div style="text-align: start; padding-left: 10px;">
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- our sites section -->
+    <section>
+        <p class="block" style="font-size: xx-large; font-weight: bold;">OUR SITES</p>
+        <div class="item block">
+            <div class="container">
+                <div class="parent">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>IBITEK-France</p>
+                </div>
+                <img src="Ibitek-France.jpg" alt="">
+                <p style=" margin: 30px;">1 Rue Claudie Scheiner 13013 Marseille FRANCE</p>
+                <div id="parent">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>+33 491 058 350</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="parent">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>IBITEK-Tunisia</p>
+                </div>
+                <img src="ibitek-tunisia.jpg" alt="">
+                <p style="margin: 20px;">Résidence Ines; Bat A 6-3 Boulevard de la Terre Centre Urbain Nord – 1082 TUNISIA</p>
+                <div id="parent" >
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>+216 313 600 06</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="parent">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>IBITEK-Czech</p>
+                </div>
+                <img src="ibitek-czech.jpeg" alt="">
+                <p style=" margin: 30px;">Pricna 1889 75501 Vsetin CZECH REPUBLIC</p>
+                <div id="parent">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>+420 605 510 903</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="parent">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>IBITEK-Morocco</p>
+                </div>
+                <img src="ibitek-maroc.jpeg" alt="">
+                <p style=" margin: 30px;">36, Lot. SNCI Boulevard Al Binaâ Z.I. Sidi Bernoussi 20590 Casablanca MOROCCO</p>
+                <div id="parent">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>+212 5223-42024</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="parent">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>IBITEK-Algeria</p>
+                </div>
+                <img src="ibitek-algeria.jpg" alt="">
+                <p style=" margin: 30px;">Rue Douzi Mohamed Bat 03 Cage H Bordj El Kiffan Alger ALGERIA</p>
+                <div id="parent">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>+213 560 942 177</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <main>
+        <div class="block">
+            <div>
+                <div>
+                    <a href="index.html"><img src="logo-ibitek-2023.png" alt="" class="logoimg"></a>
+                    <p>Have a question, need info, or a quote?</p>
+                </div>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="  Enter Your Name Please" required>
+                <input type="tel" name="phone" placeholder="  Enter Your Phone Number Please" required>
+                <input type="email" name="email" placeholder="  Enter Your Email Please" required>
+                <textarea name="message" placeholder=" Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="social-icons">
+                <a href="https://fr.linkedin.com/company/ibitek-france" target="_blank" ><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.whatsapp.net/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer section -->
+    <div class="container1">
+        <div class="child2 block">
+            <div class="item1">
+                <div class="item2">Expertises</div>
+                <div class="item3">
+                    <div style="display: flex; align-items: center; gap: 5px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m320-80 40-280H160l360-520h80l-40 320h240L400-80h-80Z"/></svg>
+                        <p> Electricity</p>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 5px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M159-120v-120h124L181-574q-27-15-44.5-44T119-680q0-50 35-85t85-35q39 0 69.5 22.5T351-720h128v-40q0-17 11.5-28.5T519-800q9 0 17.5 4t14.5 12l68-64q9-9 21.5-11.5T665-856l156 72q12 6 16.5 17.5T837-744q-6 12-17.5 15.5T797-730l-144-66-94 88v56l94 86 144-66q11-5 23-1t17 15q6 12 1 23t-17 17l-156 74q-12 6-24.5 3.5T619-512l-68-64q-6 6-14.5 11t-17.5 5q-17 0-28.5-11.5T479-600v-40H351q-3 8-6.5 15t-9.5 15l200 370h144v120H159Zm80-520q17 0 28.5-11.5T279-680q0-17-11.5-28.5T239-720q-17 0-28.5 11.5T199-680q0 17 11.5 28.5T239-640Z"/></svg>
+                        <p> Automation</p>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 5px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M80-80v-481l280-119v80l200-80v120h320v480H80Zm360-160h80v-160h-80v160Zm-160 0h80v-160h-80v160Zm320 0h80v-160h-80v160Zm272-380H687l34-260h119l32 260Z"/></svg>
+                        <p> Industry4.0</p>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 5px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M484-120q-17 0-28.5-11.5T444-160q0-7 3-14.5t9-13.5l185-185-29-29-184 185q-6 6-13 9t-15 3q-17 0-28.5-11.5T360-245q0-10 3-16.5t8-11.5l185-185-28-28-185 184q-6 6-13 9t-16 3q-16 0-28-12t-12-28q0-8 3-15t9-13l185-185-29-28-184 185q-5 5-12 8t-17 3q-17 0-28.5-11.5T189-415q0-8 3-15t9-13l223-223 150 151q11 11 26 17.5t30 6.5q32 0 56-22.5t24-57.5q0-14-5-29t-18-28L508-807q17-16 38-24.5t42-8.5q26 0 48 8.5t40 26.5l169 170q18 18 26.5 40t8.5 51q0 20-9 40.5T845-466L512-132q-8 8-14 10t-14 2ZM141-440l-26-26q-17-16-26-38t-9-46q0-26 10-48t25-37l169-170q16-16 38-25.5t43-9.5q27 0 48 7.5t41 27.5l205 205q6 6 9 13t3 15q0 16-12 28t-28 12q-9 0-15-2.5t-13-9.5L423-722 141-440Z"/></svg>
+                        <p> Services</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item1">
+                <div class="item2">Solutions</div>
+                <div class="item3">
+                    <p><i class="fa-solid fa-truck" style="color: rgb(255, 255, 255); font-size: 24px; margin-right: 5px;"></i>IBITruck</p>
+                    <p><i class="fas fa-chart-bar" style="color: rgb(255, 255, 255); font-size: 24px; margin-right: 5px;"></i>IBIProd</p>
+                    <p><i class="fa-solid fa-wifi" style="color: rgb(255, 255, 255); font-size: 24px;"></i>IBICube</p>
+                </div>
+            </div>
+            <div class="item1">
+                <div class="item2">About Us</div>
+                <div class="item3">
+                    <p><i class="fa-solid fa-location-dot" style="color: white; font-size: 24px; margin-right: 5px;"></i> Our Sites</p>
+                    <p><i class="fa-solid fa-phone-volume" style="color: white; font-size: 20px; margin-right: 5px;"></i> Contact Us</p>
+                    <p><i class="fas fa-newspaper" style="color: white; font-size: 24px; margin-right: 5px;"></i> Our News</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>© 2025 • IBITEK • All rights reserved</p>
+        </footer> 
+    </div>
+    
+    <script src="about.js"></script>
+</body>
+</html>
